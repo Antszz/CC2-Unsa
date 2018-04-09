@@ -19,7 +19,7 @@ int len( char c[]){
 	return con;
 }
 
-void *concatenar(char *a,char *b){
+void concatenar(char *a,char *b){
 	char *d=a;
 	a=a+lenP(a);
 	while(*b!='\0'){
