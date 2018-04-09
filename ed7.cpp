@@ -2,6 +2,15 @@
 
 using namespace std;
 
+int lenP(char *c){
+	char *a;
+	a=c;
+	while(*c!='\0'){
+		c++;
+	}
+	return c-a;
+}
+
 int len( char c[]){
     int con=0;
 	while(c[con]!='\0'){
@@ -44,9 +53,9 @@ int main(){
 	char *b=new char();
 	cin>>a;
 	cin>>b;
-	char one[]={"mono"};
-	char two[]={"plaza"};
-	conca(one,two);
+	char x[]={"mono"};
+	char y[]={"plaza"};
+	conca(x,y);
 	concatenar(a,b);
 	while(*a!='\0'){
 		cout<<*a;
