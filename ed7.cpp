@@ -31,21 +31,11 @@ void concatenar(char *a,char *b){
 }
 
 void conca(char a[],char b[]){
-    int tam1=len(a);
-    int tam2=len(b);
-    int tamtot=tam1+tam2;
-    char nueva[tamtot];
-    for(int i=0;i<tam1;i++){
-        nueva[i]=a[i];
+    int x=len(a);
+    int y=len(b);
+    for(int i=0;i<y;i++){
+        a[i+x]=b[i];
     }
-    for(int j=0;j<tam2;j++){
-        nueva[j+tam1]=b[j];
-    }
-    for (int i = 0; i < tamtot; i++)
-    {
-    	cout<<nueva[i];
-    }
-    cout<<endl;
 }
 
 int main(){
@@ -53,14 +43,21 @@ int main(){
 	char *b=new char();
 	cin>>a;
 	cin>>b;
-	char x[]={"mono"};
-	char y[]={"plaza"};
-	conca(x,y);
 	concatenar(a,b);
 	while(*a!='\0'){
 		cout<<*a;
 		a++;
 	}
 	cout<<endl;
+	char x[]={"mono"};
+	char y[]={"plaza"};
+	int tx=len(x);
+    int ty=len(y);
+    int t=tx+ty;
+	conca(x,y);
+	for(int i=0;i<t;i++){
+        cout<<x[i];
+    }
+    cout<<endl;
 	return 0;
 }
