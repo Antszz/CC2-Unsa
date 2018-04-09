@@ -2,15 +2,6 @@
 
 using namespace std;
 
-int lenP(char *c){
-	char *a;
-	a=c;
-	while(*c!='\0'){
-		c++;
-	}
-	return c-a;
-}
-
 int len( char c[]){
     int con=0;
 	while(c[con]!='\0'){
@@ -21,7 +12,9 @@ int len( char c[]){
 
 void concatenar(char *a,char *b){
 	char *d=a;
-	a=a+lenP(a);
+	while(*a!='\0'){
+		a++;
+	}
 	while(*b!='\0'){
 		*a = *b;
 		a++;
