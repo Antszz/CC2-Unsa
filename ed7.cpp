@@ -50,15 +50,13 @@ void conca(char a[],char b[]){
     cout<<endl;
 }
 
-
-
 int main(){
 	char *a=new char();
 	char *b=new char();
 	cin>>a;
 	cin>>b;
-	char one[]={"HOLA"};
-	char two[]={"AMIGO"};
+	char one[]={"mono"};
+	char two[]={"plaza"};
 	conca(one,two);
 	concatenar(a,b);
 	while(*a!='\0'){
