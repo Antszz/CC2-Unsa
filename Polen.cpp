@@ -10,7 +10,7 @@ int len(char c[]){
 }
 
 bool reve(char c[], int tam){
-    for(int i=0;i<tam;i++){
+    for(int i=0;i<tam/2;i++){
         if(c[i]!=c[tam-1-i])
             return false;
     }
